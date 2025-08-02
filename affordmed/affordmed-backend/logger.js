@@ -1,12 +1,12 @@
 const AUTH_URL = "http://20.244.56.144/evaluation-service/auth";
 const LOGS_URL = "http://20.244.56.144/evaluation-service/logs";
 const authPayload = {
-    email: "mohamedakrams22it@psnacet.edu.in",
-    name: "Mohamed Akram",
-    rollNo: "92132223091",
+    email: "aswathkannanm22it@psnacet.edu.in",
+    name: "Aswath Kannan M",
+    rollNo: "92132223022",
     accessCode: "rBPfSS",
-    clientID: "c5a4d2bc-958b-43d6-b6cc-105bf682bced",
-    clientSecret: "ZkKJfZCJYgUMyMEu"
+    clientID: "d8c56328-6dd1-48fb-a62d-96326f518207",
+    clientSecret: "ubhaKaaJGzHWsNvW"
 };
 
 async function getAuthToken() {
