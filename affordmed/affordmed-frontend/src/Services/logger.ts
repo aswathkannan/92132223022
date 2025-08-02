@@ -29,11 +29,11 @@ async function getAuthToken(): Promise<string> {
     const data = await response.json();
     const token = data.access_token;
 
-    // Extract expiry from JWT payload
+   
     const tokenPayload = JSON.parse(atob(token.split('.')[1]));
     const exp = tokenPayload.exp * 1000; // Convert to ms
 
-    // Save token and expiry in localStorage
+  
     localStorage.setItem("affordmed_token", token);
     localStorage.setItem("affordmed_token_expiry", exp.toString());
 
