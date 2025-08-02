@@ -29,7 +29,7 @@ app.post('/shorturls', async (req, res) => {
 
     await log("backend", "info", "shorturl", `Short URL created: ${code}`);
 
-    res.status(201).json({ shortLink: `http://localhost:5000/${code}`, expiry });
+    res.status(201).json({ shortLink: `http://localhost:3000/${code}`, expiry });
 });
 
 // API 2: Redirect Short URL
